@@ -2,7 +2,7 @@
 @section('title', 'Mirim')
 @section('content')
 <!-- Início -->
-<div class="py-24">
+<div class="pt-24">
     <div class="md:text-base text-xs max-w-7xl mx-auto px-6 sobtitulo">
         Dados • Estrutura • Escala
     </div>
@@ -13,16 +13,16 @@
         <p class="text-lg max-w-xl texto-normal">
             Desenvolvemos software orientado a processos reais, com foco em eficiência, segurança e crescimento sustentável, transformando necessidades do negócio em soluções digitais escaláveis, sempre em conformidade com a LGPD.
         </p>
-        <div>
+        <div class="max-w-7xl mx-auto">
             <a href="#sobre-nos">
             <button 
-            class="bt-laranja relative z-10 text-center hover:bg-gray-200 rounded h-12">
+            class="md:!text-lg !text-xm bt-laranja relative z-10 text-center hover:bg-gray-200 rounded h-12 ">
             Saiba Mais</button>
             </a>
             
             <button 
             onclick="window.open('https://wa.me/5514988208146', '_blank')"
-            class="w-full bt-branco relative z-10 text-center hover:bg-gray-400 rounded h-12">
+            class="md:!text-lg !text-xm w-full bt-branco relative z-10 text-center hover:bg-gray-400 rounded h-12 ">
             Agendar um Orçamento</button>
         </div>
     </div>
@@ -83,10 +83,10 @@
         </h1>
         
         <!-- Grid Container com borda preta -->
-        <div class="overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class=" grid grid-cols-1 md:grid-cols-2 gap-10">
             
             <!-- Coluna Esquerda - Web Design -->
-            <div class="overflow-hidden border-3 border-orange-500 rounded-lg md:row-span-2 flex flex-col md:h-auto h-70">
+            <div class="galeria-card overflow-hidden border-3 border-orange-500 rounded-lg md:row-span-2 flex flex-col md:h-auto h-70">
                 <div class="rounded-lg flex-1 overflow-hidden">
                     <img src="{{ asset('images/03-WebDesign.jpg') }}" 
                          alt="Web Design" 
@@ -98,7 +98,7 @@
             </div>
 
             <!-- Coluna Direita Superior - Software's B2B -->
-            <div class="overflow-hidden border-3 border-orange-500 rounded-lg flex flex-col md:h-auto h-70">
+            <div class="galeria-card overflow-hidden border-3 border-orange-500 rounded-lg flex flex-col md:h-auto h-70">
                 <div class="flex-1 overflow-hidden">
                     <img src="{{ asset('images/04-SoftwareDevelopment.jpg') }}" 
                          alt="Software B2B" 
@@ -110,7 +110,7 @@
             </div>
 
             <!-- Coluna Direita Inferior - Sistemas Embarcados -->
-            <div class="overflow-hidden border-3 border-orange-500 rounded-lg flex flex-col md:h-auto h-70">
+            <div class="galeria-card overflow-hidden border-3 border-orange-500 rounded-lg flex flex-col md:h-auto h-70">
                 <div class="flex-1 overflow-hidden">
                     <img src="{{ asset('images/05-Arduino.jpg') }}" 
                          alt="Sistemas Embarcados" 

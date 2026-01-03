@@ -74,6 +74,15 @@ header {
     background-image: url('/public/images/02-Background-Footer.png');
 }
 
+.galeria-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
 /* Componentes */
 
 .bt, .bt-branco, .bt-laranja {
@@ -82,7 +91,6 @@ header {
     padding-left: 1rem;
     padding-right: 1rem;
     width: fit-content;
-    
 }
 
 .bt-branco {
