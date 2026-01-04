@@ -2,7 +2,7 @@
 @section('title', 'Mirim')
 @section('content')
 <!-- Início -->
-<div class="pt-24">
+<section class="pt-24 pb-24">
     <div class="md:text-base text-xs max-w-7xl mx-auto px-6 sobtitulo">
         Dados • Estrutura • Escala
     </div>
@@ -28,13 +28,14 @@
     </div>
     
 
-</div>
+</section>
 
-<hr class="w-48 h-1 mx-auto my-4 bg-black border-1 rounded-sm md:my-10 md:mb-auto mb-23">
+<hr class="w-48 h-1 mx-auto my-4 bg-black border-1 rounded-sm md:my-10 md:mb-auto">
 
 <!-- Carrosel -->
+<section class="pt-24">
 <div class="md:text-base text-xs text-center max-w-7xl mx-auto px-6 sobtitulo">
-    Sistemas web sob medida • Sites institucionais e B2B • Integrações Web
+    Sistemas Web sob medida • Sites Institucionais e B2B • Integrações Web
 </div>
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <div class="relative h-56 overflow-hidden rounded-base md:h-96 md:m-20 m-3">
@@ -74,9 +75,10 @@
         </span>
     </button>
 </div>
+</section>
 
 <!-- Galeria Img -->
-<section class="py-24">
+<section class="pt-24">
     <div class="max-w-7xl mx-auto px-6">
         <h1 class="md:text-4xl text-2xl mb-6 titulo text-center">
            Transformamos ideias em soluções digitais estruturadas e escaláveis
@@ -126,7 +128,7 @@
 </section>
 
 <!-- Sobre Nós -->
-<section class="pb-24" id="sobre-nos">
+<section class="pt-24" id="sobre-nos">
     <div class="max-w-7xl mx-auto px-6 ">
         <h1 class="text-4xl mb-6 titulo">
            Mirim Web Services
@@ -142,4 +144,16 @@
         </p>
     </div>
 </section>
+
+<!-- Linguagens que trabalhamos e frameworks -->
+
+<section class="pt-24 pb-24">
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:gap-20 gap-10">
+        <img src="{{ asset('images/09-Laravel-Logo.png') }}" class="w-1/8 h-auto">
+        <img src="{{ asset('images/10-CSharp-Logo.png') }}" class="w-1/8 h-auto">
+        <img src="{{ asset('images/11-Javaspring-Logo.svg') }}" class="w-1/8 h-auto">
+        <img src="{{ asset('images/12-Tailwind-Logo.svg') }}" class="w-1/8 h-auto">
+    </div>
+</section>
+
 @endsection
