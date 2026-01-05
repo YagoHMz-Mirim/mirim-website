@@ -1,6 +1,6 @@
-@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import 'tailwindcss';
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../../node_modules/flowbite";
@@ -47,7 +47,7 @@ body {
 
 header {
     background-color: #f97316;
-    background-image: url('/public/images/01-Background-Header.png');
+    background-image: url('/images/01-Background-Header.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,7 +55,7 @@ header {
 
 #footer-bg-img {
     background-color: #f97316;
-    background-image: url('/public/images/02-Background-Footer.png');
+    background-image: url('/images/02-Background-Footer.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ header {
 /* Galeria */
 
 .galeria-bg-img {
-    background-image: url('/public/images/02-Background-Footer.png');
+    background-image: url('/images/02-Background-Footer.png');
 }
 
 .galeria-card {
