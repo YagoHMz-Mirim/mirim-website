@@ -1,159 +1,346 @@
 @extends('layout.app')
 @section('title', 'Mirim')
 @section('content')
-<!-- Início -->
-<section class="pt-24 pb-24">
-    <div class="md:text-base text-xs max-w-7xl mx-auto px-6 sobtitulo">
-        Dados • Estrutura • Escala
-    </div>
-    <div class="max-w-7xl mx-auto px-6 ">
-        <h1 class="md:text-4xl text-2xl mb-6 titulo">
-           Criação de Software
-        </h1>
-        <p class="text-lg max-w-xl texto-normal">
-            Desenvolvemos software orientado a processos reais, com foco em eficiência, segurança e crescimento sustentável, transformando necessidades do negócio em soluções digitais escaláveis, sempre em conformidade com a LGPD.
-        </p>
-        <div class="max-w-7xl mx-auto">
-            <a href="#sobre-nos">
-            <button 
-            class="md:!text-lg !text-xm bt-laranja relative z-10 text-center hover:bg-gray-200 rounded h-12 ">
-            Saiba Mais</button>
-            </a>
-            
-            <button 
-            onclick="window.open('https://wa.me/5514988208146', '_blank')"
-            class="md:!text-lg !text-xm w-full bt-branco relative z-10 text-center hover:bg-gray-400 rounded h-12 ">
-            Agendar um Orçamento</button>
-        </div>
-    </div>
-    
+    <main class="pt-[50px] sm:pt-[50px]">
 
-</section>
-
-<hr class="w-48 h-1 mx-auto my-4 bg-black border-1 rounded-sm md:my-10 md:mb-auto">
-
-<!-- Carrosel -->
-<section class="pt-24">
-<div class="md:text-base text-xs text-center max-w-7xl mx-auto px-6 sobtitulo">
-    Sistemas Web sob medida • Sites Institucionais e B2B • Integrações Web
-</div>
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <div class="relative h-56 overflow-hidden rounded-base md:h-96 md:m-20 m-3">
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ asset('images/06-Site0.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ asset('images/07-Site1.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ asset('images/08-Site2.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ asset('images/03-WebDesign.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{ asset('images/03-WebDesign.jpg') }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div> -->
-    </div>
-    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse ">
-        <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <!-- <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button> -->
-    </div>
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="md:m-20 inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
-            <span class="sr-only">Anterior</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="md:m-20 inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
-            <span class="sr-only">Próximo</span>
-        </span>
-    </button>
-</div>
-</section>
-
-<!-- Galeria Img -->
-<section class="pt-24">
-    <div class="max-w-7xl mx-auto px-6">
-        <h1 class="md:text-4xl text-2xl mb-6 titulo text-center">
-           Transformamos ideias em soluções digitais estruturadas e escaláveis
-        </h1>
-        
-        <!-- Grid Container com borda preta -->
-        <div class=" grid grid-cols-1 md:grid-cols-2 gap-10">
-            
-            <!-- Coluna Esquerda - Web Design -->
-            <div class="galeria-card overflow-hidden border-3 border-orange-500 rounded-lg md:row-span-2 flex flex-col md:h-auto h-70">
-                <div class="rounded-lg flex-1 overflow-hidden">
-                    <img src="{{ asset('images/03-WebDesign.jpg') }}" 
-                         alt="Web Design" 
-                         class="w-full h-full object-cover">
-                </div>
-                <div class="galeria-bg-img bg-orange-500 text-white font-bold md:text-2xl text-xs text-center md:py-3 py-1">
-                    Web Design
+        <section
+            class="w-full min-h-screen flex flex-col px-4 sm:px-6 md:px-8 bg-[#f3f4f6] animated-background animate-fadeIn"
+            id="mirim">
+            <div class="background-wrapper">
+                <div class="shapes-container">
+                    <div class="shape circle"></div>
+                    <div class="shape square"></div>
+                    <div class="shape circle"></div>
+                    <div class="shape square"></div>
+                    <div class="shape circle"></div>
+                    <div class="shape square"></div>
+                    <div class="gradient-overlay"></div>
                 </div>
             </div>
 
-            <!-- Coluna Direita Superior - Software's B2B -->
-            <div class="galeria-card overflow-hidden border-3 border-orange-500 rounded-lg flex flex-col md:h-auto h-70">
-                <div class="flex-1 overflow-hidden">
-                    <img src="{{ asset('images/04-SoftwareDevelopment.jpg') }}" 
-                         alt="Software B2B" 
-                         class="w-full h-full object-cover">
+            <div class="max-w-6xl w-full mt-10 sm:mt-16 md:mt-20 text-left mb-8 sm:mb-12 relative z-10">
+                <h1
+                    class="text-6xl sm:text-6xl md:text-5xl lg:text-6xl font-bold font-arial mb-6 sm:mb-8 animate-slideIn [animation-delay:0s] text-[#111827] tracking-wide">
+                    Otimize seus processos
+                </h1>
+
+                <h2
+                    class="text-5xl sm:text-5xl md:text-4xl lg:text-5xl font-arial mb-6 sm:mb-8 pl-2 sm:pl-6 md:pl-10 animate-slideIn [animation-delay:0.5s] tracking-wide">
+                    <span class="text-[#111827]">Com tecnologia seus processos ficam </span>
+                    <span class="text-orange-500">mais rápidos, mais precisos e mais profissionais</span>
+                </h2>
+
+                <h2
+                    class="text-5xl sm:text-5xl md:text-4xl lg:text-5xl font-arial pl-3 sm:pl-12 md:pl-20 animate-slideIn [animation-delay:1s] tracking-wide">
+                    <span class="text-[#111827]">Com ela você atinge </span>
+                    <span class="text-orange-500">maiores margens</span>
+                </h2>
+            </div>
+
+            <div
+                class="mt-auto w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[600px] flex items-end gap-2 sm:gap-3 md:gap-5  px-4 sm:px-8 md:px-12 animate-growUp [animation-delay:0.2s] relative z-10">
+                <div class="flex-1 h-full flex flex-col justify-end">
+                    <div
+                        class="w-full bg-orange-500 rounded-t-lg h-[40%] origin-bottom scale-y-0 animate-growUp [animation-delay:0.2s]">
+                    </div>
                 </div>
-                <div class="galeria-bg-img bg-orange-500 text-white font-bold md:text-2xl text-xs text-center md:py-3 py-1"">
-                    Software's B2B
+                <div class="flex-1 h-full flex flex-col justify-end">
+                    <div
+                        class="w-full bg-orange-500 rounded-t-lg h-[50%] origin-bottom scale-y-0 animate-growUp [animation-delay:0.4s]">
+                    </div>
+                </div>
+                <div class="flex-1 h-full flex flex-col justify-end">
+                    <div
+                        class="w-full bg-orange-500 rounded-t-lg h-[60%] origin-bottom scale-y-0 animate-growUp [animation-delay:0.6s]">
+                    </div>
+                </div>
+                <div class="flex-1 h-full flex flex-col justify-end">
+                    <div
+                        class="w-full bg-orange-500 rounded-t-lg h-[70%] origin-bottom scale-y-0 animate-growUp [animation-delay:0.8s]">
+                    </div>
+                </div>
+                <div class="flex-1 h-full flex flex-col justify-end">
+                    <div
+                        class="w-full bg-orange-500 rounded-t-lg h-[80%] origin-bottom scale-y-0 animate-growUp [animation-delay:1s]">
+                    </div>
+                </div>
+                <div class="flex-1 h-full flex flex-col justify-end">
+                    <div
+                        class="w-full bg-orange-500 rounded-t-lg h-[90%] origin-bottom scale-y-0 animate-growUp [animation-delay:1.2s]">
+                    </div>
+                </div>
+                <div class="flex-1 h-full flex flex-col justify-end">
+                    <div
+                        class="w-full bg-orange-500 rounded-t-lg h-[100%] origin-bottom scale-y-0 animate-growUp [animation-delay:1.4s]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section
+            class="relative w-full z-100 animate-fadeIn animate-slideIn [animation-delay:0s] overflow-hidden bg-gray-100  min-h-screen"
+            id="solucoes">
+
+            <div class="absolute top-0 right-0 w-full h-full lg:w-1/2 lg:h-full z-10">
+                <div class="h-full overflow-hidden shadow-4xl"
+                    style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); lg:clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);">
+                    <div class="relative w-full h-full">
+
+                        <img id="carouselImage"
+                            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100" />
+
+                        <div class="absolute inset-0 bg-black/65"></div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Coluna Direita Inferior - Sistemas Embarcados -->
-            <div class="galeria-card overflow-hidden border-3 border-orange-500 rounded-lg flex flex-col md:h-auto h-70">
-                <div class="flex-1 overflow-hidden">
-                    <img src="{{ asset('images/05-Arduino.jpg') }}" 
-                         alt="Sistemas Embarcados" 
-                         class="w-full h-full object-cover">
+            <div class="relative z-20">
+
+                <div class="w-full max-w-4xl mb-8 mx-auto px-4">
+                    <div class="flex justify-center py-6">
+                        <div
+                            class="inline-flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-24 border-b-2 border-gray-200">
+
+                            <button onclick="goToSlide(0)"
+                                class="tab-btn-v3 active relative px-3 sm:px-4 md:px-6 pb-4 sm:pb-6 font-semibold text-sm sm:text-base tracking-widest transition-all duration-300 flex items-center gap-2 sm:gap-3">
+                                <i class="fas fa-mobile-alt text-base sm:text-lg"></i>
+                                <span class="hidden sm:inline">MOBILE</span>
+                                <span class="sm:hidden">MOB</span>
+                            </button>
+
+                            <button onclick="goToSlide(1)"
+                                class="tab-btn-v3 relative px-3 sm:px-4 md:px-6 pb-4 sm:pb-6 font-semibold text-sm sm:text-base tracking-widest text-gray-400 transition-all duration-300 flex items-center gap-2 sm:gap-3">
+                                <i class="fas fa-desktop text-base sm:text-lg"></i>
+                                WEB
+                            </button>
+
+                            <button onclick="goToSlide(2)"
+                                class="tab-btn-v3 relative px-3 sm:px-4 md:px-6 pb-4 sm:pb-6 font-semibold text-sm sm:text-base tracking-widest text-gray-400 transition-all duration-300 flex items-center gap-2 sm:gap-3">
+                                <i class="fas fa-laptop-code text-base sm:text-lg"></i>
+                                <span class="hidden sm:inline">DESKTOP</span>
+                                <span class="sm:hidden">DESK</span>
+                            </button>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="galeria-bg-img bg-orange-500 text-white font-bold md:text-2xl text-xs text-center md:py-3 py-1"">
-                    Sistemas Embarcados
+
+                <div
+                    class="relative grid grid-cols-1 lg:grid-cols-2 min-h-[500px] sm:min-h-[600px] lg:min-h-[550px] mt-12 sm:mt-16 lg:mt-20 xl:mt-44">
+
+                    <div class="relative z-20 flex items-center px-4 sm:px-6 lg:px-0">
+                        <div class="max-w-7xl w-full">
+                            <div
+                                class="relative min-h-[300px] sm:min-h-[400px] lg:ml-12 xl:ml-20 mb-12 sm:mb-16 lg:mb-24 md:mb-16">
+
+                                <div
+                                    class="carousel-text-slide absolute inset-0 opacity-100 z-10 transition-opacity duration-500 pointer-events-auto">
+                                    <div
+                                        class="h-full flex flex-col items-center lg:items-start justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-14 xl:gap-16 py-6 sm:py-9">
+
+                                        <h2
+                                            class="text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-inter text-white lg:text-gray-900 leading-tight tracking-tight max-w-3xl text-center lg:text-left">
+                                            <span class="text-orange-500">Coletores indicadores</span>, seja o que for
+                                            estará na palma de sua
+                                            mão para
+                                            <span class="text-orange-500">acesso rápido.</span>
+                                        </h2>
+
+                                        <button 
+                                            onclick="window.open('https://wa.me/+5514991221660', '_blank')"
+                                            class="inline-flex items-center gap-5 sm:gap-4 md:gap-5 lg:gap-6 bg-orange-500 text-white px-12 py-6 sm:px-14 sm:py-5 md:px-16 md:py-6 lg:px-18 lg:py-7 xl:px-20 xl:py-8 text-xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+                                                   rounded-full font-inter font-semibold hover:bg-orange-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 whitespace-nowrap">
+                                            Solicitar orçamento
+                                            <i
+                                                class="fa-solid fa-arrow-right text-xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"></i>
+                                        </button>
+
+
+
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="carousel-text-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500 pointer-events-none">
+                                    <div
+                                        class="h-full flex flex-col items-center lg:items-start justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-14 xl:gap-16 py-6 sm:py-9">
+
+                                        <h2
+                                            class="text-3xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-inter text-white lg:text-gray-900 leading-tight tracking-tight max-w-3xl text-center lg:text-left">
+                                            Tenha seu <span class="text-orange-500">espaço profissional na
+                                                internet</span> com um site que
+                                            entenda as suas
+                                            <span class="text-orange-500">dores</span> e <span
+                                                class="text-orange-500">cresça junto</span> com
+                                            o
+                                            seu negócio.
+                                        </h2>
+
+                                        <button
+                                            class="inline-flex items-center gap-5 sm:gap-4 md:gap-5 lg:gap-6 bg-orange-500 text-white px-12 py-6 sm:px-14 sm:py-5 md:px-16 md:py-6 lg:px-18 lg:py-7 xl:px-20 xl:py-8 text-xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+                                                   rounded-full font-inter font-semibold hover:bg-orange-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 whitespace-nowrap">
+                                            Solicitar orçamento
+                                            <i
+                                                class="fa-solid fa-arrow-right text-xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"></i>
+                                        </button>
+
+
+
+
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="carousel-text-slide absolute inset-0 opacity-0 z-0 transition-opacity duration-500 pointer-events-none">
+                                    <div
+                                        class="h-full flex flex-col items-center lg:items-start justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-14 xl:gap-16 py-6 sm:py-9">
+
+                                        <h2
+                                            class="text-3xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-inter text-white lg:text-gray-900 leading-tight tracking-tight max-w-3xl text-center lg:text-left">
+                                            Processos, análises e operações complexas executadas direto no seu
+                                            computador,
+                                            <span class="text-orange-500">sem depender de rede.</span>
+                                        </h2>
+
+                                        <button
+                                            class="inline-flex items-center gap-5 sm:gap-4 md:gap-5 lg:gap-6 bg-orange-500 text-white px-12 py-6 sm:px-14 sm:py-5 md:px-16 md:py-6 lg:px-18 lg:py-7 xl:px-20 xl:py-8 text-xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+                                                   rounded-full font-inter font-semibold hover:bg-orange-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 whitespace-nowrap">
+                                            Solicitar orçamento
+                                            <i
+                                                class="fa-solid fa-arrow-right text-xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"></i>
+                                        </button>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative w-full h-full hidden lg:block"></div>
+
                 </div>
+
             </div>
 
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Sobre Nós -->
-<section class="pt-24" id="sobre-nos">
-    <div class="max-w-7xl mx-auto px-6 ">
-        <h1 class="text-4xl mb-6 titulo">
-           Mirim Web Services
-        </h1>
-        <p class="text-lg max-w-xl texto-normal">
-            Somos uma empresa de tecnologia focada em desenvolver soluções digitais com base em dados, processos e decisões conscientes. Atuamos na criação de software e sistemas sob medida, sempre priorizando estrutura, segurança e valor real ao negócio.
-            <br><br>
-            <b>Missão:</b> identificar, analisar e validar oportunidades de soluções digitais que resolvam problemas reais, criando uma base estratégica e financeira sólida para crescimento sustentável.
-            <br><br>
-            <b>Visão:</b> construir uma empresa de tecnologia escalável e orientada a produtos, capaz de gerar valor recorrente e duradouro para o mercado.
-            <br><br>
-            <b>Valores:</b> estrutura antes da escala, decisões orientadas a dados, foco em valor real ao cliente, eficiência operacional e aprendizado contínuo.
-        </p>
-    </div>
-</section>
+        <section
+            class="w-full min-h-screen flex flex-col bg-[#ff8533] relative overflow-hidden opacity-1 translate-y-6 animate-[sectionIn_0.8s_ease-out_forwards]"
+            id="sobre">
 
-<!-- Linguagens que trabalhamos e frameworks -->
+            <div class="absolute inset-0 bg-black/10 rounded-lg"></div>
 
-<section class="pt-24 pb-24">
-    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:gap-20 gap-10">
-        <img src="{{ asset('images/09-Laravel-Logo.png') }}" class="w-1/8 h-auto">
-        <img src="{{ asset('images/10-CSharp-Logo.png') }}" class="w-1/8 h-auto">
-        <img src="{{ asset('images/11-Javaspring-Logo.svg') }}" class="w-1/8 h-auto">
-        <img src="{{ asset('images/12-Tailwind-Logo.svg') }}" class="w-1/8 h-auto">
-    </div>
-</section>
 
+            <div class="absolute top-[-35%] left-[-18%] w-[850px] h-[850px] wave-1 pointer-events-none">
+                <svg viewBox="0 0 850 850" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="425" cy="425" rx="425" ry="360" fill="rgba(255, 154, 77, 0.4)"
+                        opacity="0.9" />
+                </svg>
+            </div>
+
+            <div class="absolute top-[8%] right-[-22%] w-[720px] h-[720px] wave-2 pointer-events-none">
+                <svg viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="360" cy="360" rx="360" ry="310"
+                        fill="rgba(255, 122, 31, 0.35)" opacity="0.85" />
+                </svg>
+            </div>
+
+            <div class="absolute top-[35%] left-[12%] w-[550px] h-[550px] wave-3 pointer-events-none">
+                <svg viewBox="0 0 550 550" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="275" cy="275" rx="275" ry="230"
+                        fill="rgba(255, 133, 51, 0.3)" opacity="0.8" />
+                </svg>
+            </div>
+
+            <div class="absolute bottom-[-38%] right-[-12%] w-[780px] h-[780px] wave-4 pointer-events-none">
+                <svg viewBox="0 0 780 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="390" cy="390" rx="390" ry="335"
+                        fill="rgba(255, 154, 77, 0.33)" opacity="0.87" />
+                </svg>
+            </div>
+
+            <div class="absolute bottom-[-20%] left-[-8%] w-[620px] h-[620px] wave-1 pointer-events-none"
+                style="animation-delay: 4s;">
+                <svg viewBox="0 0 620 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="310" cy="310" rx="310" ry="265"
+                        fill="rgba(255, 122, 31, 0.28)" opacity="0.82" />
+                </svg>
+            </div>
+
+            <div
+                class="absolute inset-0 bg-gradient-to-br from-orange-400/10 via-transparent to-orange-600/10 pointer-events-none">
+            </div>
+
+            </div>
+
+            <div class="max-w-[115rem] w-full mx-auto z-10 my-32 px-6 sm:px-8 md:px-12">
+                <div class="text-center mb-16 animate-slideUp">
+                    <h2 class="text-6xl sm:text-7xl lg:text-7xl font-inter text-white mb-4 leading-tight">
+                        <span class="inline-block">Sobre</span>
+                    </h2>
+
+                    <div class="flex items-center justify-center gap-3 mb-4">
+                        <div
+                            class="w-36 h-px rounded-7xl bg-white/90 origin-center scale-x-0 opacity-0 animate-[lineIn_0.6s_ease-out_forwards]">
+                        </div>
+                    </div>
+
+                    <p class="text-xl sm:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed font-light">
+                        Somos uma empresa de tecnologia focada em desenvolver
+                        <span class="font-semibold text-white">soluções digitais</span> com base em
+                        <span class="font-semibold text-white">dados, processos</span> e
+                        <span class="font-semibold text-white">decisões conscientes</span>.
+                    </p>
+
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-4 items-stretch">
+
+                    <div
+                        class="value-card bg-white/10 backdrop-blur-sm p-12 rounded-3xl border border-white min-h-[28rem]">
+                        <div class="icon-wrapper w-24 h-24 rounded-3xl flex items-center justify-center mb-8">
+                            <i class="fa-regular fa-flag text-white text-7xl"></i>
+                        </div>
+                        <h3 class="text-5xl font-inter sm:text-3xl lg:text-5xl text-white mb-6">Missão</h3>
+                        <p class="text-white/90 text-2xl leading-relaxed">
+                            Identificar, analisar e transformar gargalos reais em soluções digitais estratégicas, por
+                            meio da
+                            informatização de processos.
+                    </div>
+
+                    <div class="value-card bg-white/10 backdrop-blur-sm p-12 rounded-3xl border border-white min-h-[28rem]"
+                        style="animation-delay: 0.1s;">
+                        <div class="icon-wrapper w-24 h-24 rounded-3xl flex items-center justify-center mb-8">
+                            <i class="fa-regular fa-eye text-white text-7xl"></i>
+                        </div>
+                        <h3 class="text-5xl font-inter sm:text-3xl lg:text-5xl text-white mb-6">Visão</h3>
+                        <p class="text-white/90 text-2xl leading-relaxed">
+                            Ser uma empresa de tecnologia sólida e escalável, orientada a produtos que geram valor real,
+                            recorrente e
+                            sustentável.</p>
+                    </div>
+
+                    <div class="value-card bg-white/10 backdrop-blur-sm p-12 rounded-3xl border border-white min-h-[28rem]"
+                        style="animation-delay: 0.2s;">
+                        <div class="icon-wrapper w-24 h-24 rounded-3xl flex items-center justify-center mb-8">
+                            <i class="fa-regular fa-handshake text-white text-7xl"></i>
+                        </div>
+                        <h3 class="text-5xl sm:text-3xl lg:text-5xl font-inter text-white mb-6">Valores</h3>
+                        <p class="text-white/90 text-2xl leading-relaxed">
+                            Estrutura antes da escala </p>
+                        <p class="text-white/90 text-2xl leading-relaxed">
+                            Decisão consciente
+                        </p>
+                        <p class="text-white/90 text-2xl leading-relaxed">
+                            Foco em valor real ao cliente
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
 @endsection

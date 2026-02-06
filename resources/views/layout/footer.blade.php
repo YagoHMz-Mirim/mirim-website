@@ -1,34 +1,38 @@
-<footer class="w-full border-b">
-    <div class="max-w-screen mx-auto px-6 py-4 grid grid-cols-1 md:grid-cols-2 " id="footer-bg-img">
-        <div class="w-full max-w-9xl mx-auto px-6 py-10 text-sm flex flex-col gap-4 items-start ">
-            <button 
-            onclick="window.open('https://wa.me/5514988208146', '_blank')"
-            class="relative z-10 p-2 md:text-start text-start font-semibold bg-white md:w-1/3 w-full hover:bg-gray-200 rounded h-12">
-            <i class="fa-brands fa-instagram  mt-2 m-1"></i>    
-            Instagram</button>
-            <br>
-            
-            <button 
-            onclick="window.open('https://wa.me/5514988208146', '_blank')"
-            class="relative z-10 p-2 md:text-start text-start font-semibold bg-white md:w-1/3 w-full hover:bg-gray-200 rounded h-12">
-            <i class="fa-brands fa-whatsapp  mt-2 m-1"></i>    
-            Whatsapp</button>
-        </div>
-        <div class="text-white font-bold w-full max-w-9xl mx-auto px-6 py-10 text-sm flex  md:justify-end justify-center items-center">
-           
-        <i class="fa-solid fa-envelope-open-text  mt-2 m-1"></i>contato@mirimweb.com.br
-        </div>
-    </div>
+ <div
+     class="mt-20 mb-20 relative w-full z-100 overflow-hidden bg-gradient-to-b from-[#1B130D] to-[#0D0A06] p-4 flex items-center justify-center min-h-[175px] ">
 
-    <div class="max-w-screen" id="footer-bottom">
-        <div class="items-center max-w-9xl mx-auto px-6 py-10 text-sm flex justify-between md:flex-row flex-col gap-4 text-white font-bold">
-            <span>© {{ date('Y') }} Mirim Tecnologia</span>
-            <span class="flex items-center">Construímos estruturas sólidas para crescer com consistência.
-            <img src="{{ asset('images/00-Logo-Mirim.png') }}" alt="" class="h-10">
+     <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-black/40"></div>
 
+     <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 text-6xl md:text-8xl relative z-10">
+         <i class="devicon-laravel-original colored float"></i>
+         <i class="devicon-csharp-plain colored float" style="animation-delay: 0.5s;"></i>
+         <i class="devicon-spring-original colored float" style="animation-delay: 1s;"></i>
+         <i class="devicon-nextjs-plain text-white float" style="animation-delay: 1.5s;"></i>
+     </div>
+ </div>
 
-            </span>
-        </div>
-    </div>
-    
-</footer>
+ <div id="footer"
+     class="relative z-20 py-6 px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4
+         text-white text-sm bg-cover bg-center bg-orange-500">
+
+     <div class="absolute inset-0 bg-gradient-to-t from-black/5 via-black/5 to-black/10"></div>
+
+     <div class="relative z-10 text-center sm:text-left">
+         © 2026 Mirim – Todos os direitos reservados
+     </div>
+
+     <div class="relative z-10 flex items-center gap-4">
+         <!-- <span class="hidden sm:inline">Portou a luz, o Deus do sol!</span> -->
+
+         <div class="w-32 h-20 sm:w-40 sm:h-24 flex items-center justify-center">
+             <img id="logo" src="{{ asset('images/logo.png') }}" alt="Logo Mirim-Web" class="w-20 h-20 sm:w-24 sm:h-24 object-contain">
+         </div>
+     </div>
+ </div>
+
+ </div>
+
+ </section>
+
+ </main>
+
