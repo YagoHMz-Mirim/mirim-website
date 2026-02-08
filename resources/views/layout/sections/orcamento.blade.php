@@ -65,7 +65,7 @@
                                  </h2>
 
                                  <button
-                                     class="inline-flex items-center gap-5 sm:gap-4 md:gap-5 lg:gap-6 bg-orange-500 text-white px-12 py-6 sm:px-14 sm:py-5 md:px-16 md:py-6 lg:px-18 lg:py-7 xl:px-20 xl:py-8 text-xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+                                     class="mb-5 inline-flex items-center gap-5 sm:gap-4 md:gap-5 lg:gap-6 bg-orange-500 text-white px-12 py-6 sm:px-14 sm:py-5 md:px-16 md:py-6 lg:px-18 lg:py-7 xl:px-20 xl:py-8 text-xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
                                      rounded-full font-inter font-semibold hover:bg-orange-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 whitespace-nowrap">
                                      Solicitar orçamento
                                      <i

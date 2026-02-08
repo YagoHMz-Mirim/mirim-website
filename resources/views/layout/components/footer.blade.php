@@ -10,7 +10,7 @@
     </div>
 
     <div class="relative z-10 flex items-center gap-4">
-        <span class="hidden sm:inline">Portou a luz, o Deus do sol!</span>
+        <!-- <span class="hidden sm:inline">Portou a luz, o Deus do sol!</span> -->
 
         <div class="w-32 h-20 sm:w-40 sm:h-24 flex items-center justify-center">
             <img src="{{ asset('images/logo.png') }}" alt="Logo Mirim-Web"

@@ -116,7 +116,7 @@
 
           <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-black/40"></div>
 
-          <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 text-6xl md:text-8xl relative z-10">
+          <div class="mb-5 mt-5 flex flex-wrap justify-center items-center gap-12 md:gap-20 text-6xl md:text-8xl relative z-10">
               <i class="devicon-laravel-original colored float"></i>
               <i class="devicon-csharp-plain colored float" style="animation-delay: 0.5s;"></i>
               <i class="devicon-spring-original colored float" style="animation-delay: 1s;"></i>
