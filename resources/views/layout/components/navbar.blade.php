@@ -24,6 +24,7 @@
 
          <li class="flex items-center pl-3 sm:pl-4">
              <button
+                    onclick="window.open('https://wa.me/5514991221660', '_blank')"
                  class="bg-orange-500 text-white px-4 py-1 rounded-full text-sm sm:text-base hover:bg-orange-600 transition-colors duration-500 ease-in-out">
                  Contato
              </button>
